@@ -1,0 +1,11 @@
+[Unit]
+Description=UAV
+
+[Service]
+ExecStart=/home/root/uav
+Restart=always
+RestartSec=10s
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=basic.target
